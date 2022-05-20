@@ -1,1 +1,48 @@
+*, *::after, ::before {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+body {
+    background-color: lightgray;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vm;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: plum;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+.start-button {
+    background-color: rgb(127, 236, 127);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+.hide {
+    display: none;
+}
