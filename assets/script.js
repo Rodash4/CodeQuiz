@@ -3,6 +3,13 @@ var quizContainerEL = document.getElementById("quiz-container")
 var questionEL = document.getElementById("question")
 var answerEL = document.getElementById("answer-buttons")
 
+let score = 0;
+let questionCouter = 0;
+let availableQuestions = [];
+let currentQuestion = {};
+let acceptingAnswer = true;
+
+
 startButton.addEventListener("click", startGame)
 
 function startGame() {
@@ -13,26 +20,32 @@ function startGame() {
     
 }
 
+startGame()
+
 function nextQuestion () {
     showQuestion()
 
 }
+
+nextQuestion ()
 
 function showQuestion(question){
     questionEL.innerText = question.question
 
 }
 
+showQuestion ()
+
 function selectAnswer() {
 
 }
 
-var questions = [
+let questions = [
     {
-        question: Placing two of these symbols in front of a line of code will comment the code out?,
-        answer:[
+        questionEL: "Placing two of these symbols in front of a line of code will comment the code out?",
+        answerEL:[
             { text: /, correct: true },
-            { text: (, correct: false },
+            { text: ?, correct: false },
             { text: -, correct: false },
             { text: &, correct: false }
 
@@ -40,3 +53,7 @@ var questions = [
 
     }
 ]
+
+const CORRECT_BONUS = 1;
+const MAX_QUESTIONS = 4;
+

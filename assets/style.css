@@ -23,6 +23,12 @@ body {
     box-shadow: 0 0 10px 2px;
 }
 
+.highscores {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
 .button-grid {
     display: grid;
     grid-template-columns: repeat(1,auto);
